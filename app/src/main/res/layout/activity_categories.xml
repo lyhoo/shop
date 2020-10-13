@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categories"
+    android:background="@color/colorPrimaryDark">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="71dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:elevation="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/shou_ye"-->
+            <!--tools:srcCompat="@tools:sample/avatars[0]" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/fen_lei"-->
+            <!--tools:srcCompat="@tools:sample/avatars[0]" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView3"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/gou_wu"-->
+            <!--tools:srcCompat="@tools:sample/avatars[0]" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/ge_ren"-->
+            <!--tools:srcCompat="@tools:sample/avatars[0]" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/searchview_line"
+            android:elevation="3dp"
+            android:iconifiedByDefault="false"
+            android:searchIcon="@drawable/chazhao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="192dp">
+
+        </SearchView>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/saoma"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/good_i"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+</android.support.constraint.ConstraintLayout>
