@@ -1,2 +1,2 @@
 # shop
-A project that uses Android to implement a shopping mall
+利用安卓实现购物商城
